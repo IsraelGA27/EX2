@@ -46,7 +46,7 @@ namespace EX2
             btnAceptar.Location = new Point(290, 350);
 
             // Anidando Evento -- Cerrar 
-            btnAceptar.Click += new EventHandler(Form2_Load);
+            btnAceptar.Click += new EventHandler(btnAceptar_Click);
             this.Controls.Add(btnAceptar);
 
             btnCancel.Text = "Cancelar";

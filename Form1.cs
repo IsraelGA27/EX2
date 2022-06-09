@@ -154,7 +154,13 @@ namespace EX2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            if (cmbFiguras.SelectedIndex != 0)
+            {
+                Form2 f2 = new Form2();
+                f2.txtMoneda.Text = cmbFiguras.Text;
+                f2.Show();
+                f2.Monto2 = float.Parse(txtMonto.Text);
+            }
         }
 
         private void btnCalcular_Click(Object? sender, EventArgs e)
