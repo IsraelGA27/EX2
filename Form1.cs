@@ -48,7 +48,7 @@ namespace EX2
 
             cmbFiguras.SelectedIndex = 0;
             cmbFiguras.Location = new Point(10, 40);
-            cmbFiguras.SelectedValueChanged += new EventHandler(cmb_ValueChanged);
+            cmbFiguras.SelectedValueChanged += new EventHandler(Form1_Load);
 
         }
 
