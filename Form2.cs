@@ -17,6 +17,15 @@ namespace EX2
         public CheckBox? chbxCAD;
         public CheckBox? chbxEUR;
         public CheckBox? chbxJPY;
+
+        public Label lblMensaje;
+        private Button btnAceptar;
+        private Button btnCancel;
+        public float Monto2, Conversion, Conversion2, Conversion3, Conversion4, Conversion5;
+        public double resultado;
+        public TextBox txtMoneda;
+
+
         public Form2()
         {
             InitializeComponent();
