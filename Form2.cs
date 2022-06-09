@@ -62,10 +62,50 @@ namespace EX2
             txtMoneda.Location = new Point(15, 135);
             this.Controls.Add(txtMoneda);
 
+            // MONEDAS
 
+            // MX
+            chbxMX = new CheckBox();
+            chbxMX.AutoSize = true;
+            chbxMX.Location = new Point(15, 15);
+            chbxMX.Text = "MXN - Pesos Mexicanos";
+            this.Controls.Add(chbxMX);
+            chbxMX.Visible = true;
+
+            // USD
+            chbxUSD = new CheckBox();
+            chbxUSD.AutoSize = true;
+            chbxUSD.Location = new Point(15, 40);
+            chbxUSD.Text = "USD - Dólar Estadounidense";
+            this.Controls.Add(chbxUSD);
+            chbxUSD.Visible = true;
+
+            // CAD
+            chbxCAD = new CheckBox();
+            chbxCAD.AutoSize = true;
+            chbxCAD.Location = new Point(15, 65);
+            chbxCAD.Text = "CAD - Dólar Canadiense";
+            this.Controls.Add(chbxCAD);
+            chbxCAD.Visible = true;
+
+            // EUR
+            chbxEUR = new CheckBox();
+            chbxEUR.AutoSize = true;
+            chbxEUR.Location = new Point(15, 90);
+            chbxEUR.Text = "EUR - Euro";
+            this.Controls.Add(chbxEUR);
+            chbxEUR.Visible = true;
+
+            // JPY
+            chbxJPY = new CheckBox();
+            chbxJPY.AutoSize = true;
+            chbxJPY.Location = new Point(15, 115);
+            chbxJPY.Text = "JPY - Yen Japonés";
+            this.Controls.Add(chbxJPY);
+            chbxJPY.Visible = true;
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void Form2_Load(object sender, EventArgs e) // la dejaremos de lado para crear otra mejor 
         {
 
         }
