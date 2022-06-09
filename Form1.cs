@@ -1,3 +1,8 @@
+// Dejare instrucciobnes de como usar el código tanto aqui como en un readme (si es posible xd)
+
+// Principalmente primero se debe de seleccionar el monto y despues el tipo de moneda que será
+// Luego se le da a calcular y debera elegir al tipo de cambio que quiere convertir y así de manera secuencial
+
 namespace EX2
 {
     public partial class Form1 : Form

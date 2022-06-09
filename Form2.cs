@@ -107,11 +107,11 @@ namespace EX2
 
         private void btnAceptar_Click(Object? sender, EventArgs e)
         {
-            if (txtMoneda.Text != "Selecciona Moneda" && Monto2 > 0)
+            if (txtMoneda.Text != "Selecciona Moneda" && Monto2>0)
             {
                 Form1 f1 = new Form1();
 
-                if (txtMoneda.Text == "MXN (Peso Mexicano)")
+               if (txtMoneda.Text == "MXN (Peso Mexicano)")
                 {
                     if (chbxMX.Checked)
                     {
