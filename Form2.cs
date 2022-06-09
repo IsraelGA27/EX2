@@ -69,5 +69,12 @@ namespace EX2
         {
 
         }
+
+        private void btnCancelar_Click(Object? sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Cancel;
+            //this.Close();
+        }
+
     }
 }
