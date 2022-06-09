@@ -28,7 +28,18 @@ namespace EX2
 
         public Form2()
         {
+            btnCancel = new Button();
+            btnAceptar = new Button();
+            lblMensaje = new Label();
             InitializeComponent();
+            InicializarComponentes();
+            InitializeComponent();
+        }
+
+        private void InicializarComponentes()
+        {
+            this.Size = new Size(400, 450);
+            this.Text = "Nueva Ventana";
         }
 
         private void Form2_Load(object sender, EventArgs e)
