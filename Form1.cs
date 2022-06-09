@@ -50,6 +50,32 @@ namespace EX2
             cmbFiguras.Location = new Point(10, 40);
             cmbFiguras.SelectedValueChanged += new EventHandler(Form1_Load);
 
+            // label Monto
+            lblCalculo = new Label();
+            lblCalculo.Text = "Monto";
+            lblCalculo.AutoSize = true;
+            lblCalculo.Location = new Point(150, 10);
+
+            // Cuadro de texto para el Monto
+            txtMonto = new TextBox();
+            txtMonto.Size = new Size(100, 20);
+            txtMonto.Location = new Point(150, 40);
+
+            // Botón Calcular
+            btnCalcular = new Button();
+            btnCalcular.Text = "Calcular";
+            btnCalcular.AutoSize = true;
+            btnCalcular.Location = new Point(150, 70);
+            btnCalcular.Click += new EventHandler(btnCalcular_Click);
+            this.Controls.Add(btnCalcular);
+
+            // label Conversiones
+            lblConverciones = new Label();
+            lblConverciones.Text = "Conversiones";
+            lblConverciones.AutoSize = true;
+            lblConverciones.Location = new Point(20, 100);
+
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
