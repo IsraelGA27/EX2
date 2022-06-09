@@ -107,7 +107,208 @@ namespace EX2
 
         private void btnAceptar_Click(Object? sender, EventArgs e)
         {
+            if (txtMoneda.Text != "Selecciona Moneda" && Monto2 > 0)
+            {
+                Form1 f1 = new Form1();
 
+                if (txtMoneda.Text == "MXN (Peso Mexicano)")
+                {
+                    if (chbxMX.Checked)
+                    {
+                        resultado = Monto2 * 1;
+                        f1.txtMonto1.Text = "$" + Convert.ToString(resultado);
+                        f1.lblMX.Visible = true;
+                        f1.txtMonto1.Visible = true;
+                    }
+                    if (chbxUSD.Checked)
+                    {
+                        resultado = Monto2 * 0.05;
+                        f1.txtMonto4.Text = "$" + Convert.ToString(resultado);
+                        f1.lblUSD.Visible = true;
+                        f1.txtMonto4.Visible = true;
+                    }
+                    if (chbxCAD.Checked)
+                    {
+                        resultado = Monto2 * 0.06;
+                        f1.txtMonto2.Text = "$" + Convert.ToString(resultado);
+                        f1.lblCAD.Visible = true;
+                        f1.txtMonto2.Visible = true;
+                    }
+                    if (chbxEUR.Checked)
+                    {
+                        resultado = Monto2 * 0.04;
+                        f1.txtMonto3.Text = "¥" + Convert.ToString(resultado);
+                        f1.lblEUR.Visible = true;
+                        f1.txtMonto3.Visible = true;
+                    }
+                    if (chbxJPY.Checked)
+                    {
+                        resultado = Monto2 * 5.32;
+                        f1.txtMonto5.Text = Convert.ToString(resultado);
+                        f1.lblJPY.Visible = true;
+                        f1.txtMonto5.Visible = true;
+                    }
+                    f1.Show();
+                }
+                if (txtMoneda.Text == "USD (Dolar Estadounidense)")
+                {
+                    if (chbxMX.Checked)
+                    {
+                        resultado = Monto2 * 21.23;
+                        f1.txtMonto1.Text = "$" + Convert.ToString(resultado);
+                        f1.lblMX.Visible = true;
+                        f1.txtMonto1.Visible = true;
+                    }
+                    if (chbxUSD.Checked)
+                    {
+                        resultado = Monto2 * 1;
+                        f1.txtMonto4.Text = "$" + Convert.ToString(resultado);
+                        f1.lblUSD.Visible = true;
+                        f1.txtMonto4.Visible = true;
+                    }
+                    if (chbxCAD.Checked)
+                    {
+                        resultado = Monto2 * 1.28;
+                        f1.txtMonto2.Text = "$" + Convert.ToString(resultado);
+                        f1.lblCAD.Visible = true;
+                        f1.txtMonto2.Visible = true;
+                    }
+                    if (chbxEUR.Checked)
+                    {
+                        resultado = Monto2 * 0.89;
+                        f1.txtMonto3.Text = "¥" + Convert.ToString(resultado);
+                        f1.lblEUR.Visible = true;
+                        f1.txtMonto3.Visible = true;
+                    }
+                    if (chbxJPY.Checked)
+                    {
+                        resultado = Monto2 * 113.05;
+                        f1.txtMonto5.Text = "¥" + Convert.ToString(resultado);
+                        f1.lblJPY.Visible = true;
+                        f1.txtMonto5.Visible = true;
+                    }
+                    f1.Show();
+                }
+                if (txtMoneda.Text == "CAD (Dolar Canadiense)")
+                {
+                    if (chbxMX.Checked)
+                    {
+                        resultado = Monto2 * 16.55;
+                        f1.txtMonto1.Text = "$" + Convert.ToString(resultado);
+                        f1.lblMX.Visible = true;
+                        f1.txtMonto1.Visible = true;
+                    }
+                    if (chbxUSD.Checked)
+                    {
+                        resultado = Monto2 * 0.78;
+                        f1.txtMonto4.Text = "$" + Convert.ToString(resultado);
+                        f1.lblUSD.Visible = true;
+                        f1.txtMonto4.Visible = true;
+                    }
+                    if (chbxCAD.Checked)
+                    {
+                        resultado = Monto2 * 1;
+                        f1.txtMonto2.Text = "$" + Convert.ToString(resultado);
+                        f1.lblCAD.Visible = true;
+                        f1.txtMonto2.Visible = true;
+                    }
+                    if (chbxEUR.Checked)
+                    {
+                        resultado = Monto2 * 0.69;
+                        f1.txtMonto3.Text = "€" + Convert.ToString(resultado);
+                        f1.lblEUR.Visible = true;
+                        f1.txtMonto3.Visible = true;
+                    }
+                    if (chbxJPY.Checked)
+                    {
+                        resultado = Monto2 * 88.12;
+                        f1.txtMonto5.Text = "¥" + Convert.ToString(resultado);
+                        f1.lblJPY.Visible = true;
+                        f1.txtMonto5.Visible = true;
+                    }
+                    f1.Show();
+                }
+                if (txtMoneda.Text == "EUR (Euro)")
+                {
+                    if (chbxMX.Checked)
+                    {
+                        resultado = Monto2 * 23.96;
+                        f1.txtMonto1.Text = "$" + Convert.ToString(resultado);
+                        f1.lblMX.Visible = true;
+                        f1.txtMonto1.Visible = true;
+                    }
+                    if (chbxUSD.Checked)
+                    {
+                        resultado = Monto2 * 0.78;
+                        f1.txtMonto4.Text = "$" + Convert.ToString(resultado);
+                        f1.lblUSD.Visible = true;
+                        f1.txtMonto4.Visible = true;
+                    }
+                    if (chbxCAD.Checked)
+                    {
+                        resultado = Monto2 * 1.45;
+                        f1.txtMonto2.Text = "$" + Convert.ToString(resultado);
+                        f1.lblCAD.Visible = true;
+                        f1.txtMonto2.Visible = true;
+                    }
+                    if (chbxEUR.Checked)
+                    {
+                        resultado = Monto2 * 1;
+                        f1.txtMonto3.Text = "€" + Convert.ToString(resultado);
+                        f1.lblEUR.Visible = true;
+                        f1.txtMonto3.Visible = true;
+                    }
+                    if (chbxJPY.Checked)
+                    {
+                        resultado = Monto2 * 127.56;
+                        f1.txtMonto5.Text = "¥" + Convert.ToString(resultado);
+                        f1.lblJPY.Visible = true;
+                        f1.txtMonto5.Visible = true;
+                    }
+                    f1.Show();
+                }
+                if (txtMoneda.Text == "JPY (Yen Japones)")
+                {
+                    if (chbxMX.Checked)
+                    {
+                        resultado = Monto2 * 0.1878;
+                        f1.txtMonto1.Text = "$" + Convert.ToString(resultado);
+                        f1.lblMX.Visible = true;
+                        f1.txtMonto1.Visible = true;
+                    }
+                    if (chbxUSD.Checked)
+                    {
+                        resultado = Monto2 * 0.0088;
+                        f1.txtMonto4.Text = "$" + Convert.ToString(resultado);
+                        f1.lblUSD.Visible = true;
+                        f1.txtMonto4.Visible = true;
+                    }
+                    if (chbxCAD.Checked)
+                    {
+                        resultado = Monto2 * 0.0113;
+                        f1.txtMonto2.Text = "$" + Convert.ToString(resultado);
+                        f1.lblCAD.Visible = true;
+                        f1.txtMonto2.Visible = true;
+                    }
+                    if (chbxEUR.Checked)
+                    {
+                        resultado = Monto2 * 0.0078;
+                        f1.txtMonto3.Text = "€" + Convert.ToString(resultado);
+                        f1.lblEUR.Visible = true;
+                        f1.txtMonto3.Visible = true;
+                    }
+                    if (chbxJPY.Checked)
+                    {
+                        resultado = Monto2 * 1;
+                        f1.txtMonto5.Text = "¥" + Convert.ToString(resultado);
+                        f1.lblJPY.Visible = true;
+                        f1.txtMonto5.Visible = true;
+                    }
+                    f1.Show();
+                }
+            }
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
         private void btnCancelar_Click(Object? sender, EventArgs e)
         {

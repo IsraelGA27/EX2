@@ -29,7 +29,7 @@ namespace EX2
         private void InicializarComponentes()
         {
             // tamaño para la vnetana inicial
-            this.Size = new Size(300, 350);
+            this.Size = new Size(460, 500);
 
             // label moneda
             lblFigura = new Label();
@@ -47,6 +47,7 @@ namespace EX2
             cmbFiguras.Items.Add("JPY (Yen Japones)");
 
             cmbFiguras.SelectedIndex = 0;
+            cmbFiguras.Size = new Size(200, 40);
             cmbFiguras.Location = new Point(10, 40);
             cmbFiguras.SelectedValueChanged += new EventHandler(Form1_Load);
 
@@ -54,18 +55,18 @@ namespace EX2
             lblCalculo = new Label();
             lblCalculo.Text = "Monto";
             lblCalculo.AutoSize = true;
-            lblCalculo.Location = new Point(150, 10);
+            lblCalculo.Location = new Point(230, 10);
 
             // Cuadro de texto para el Monto
             txtMonto = new TextBox();
-            txtMonto.Size = new Size(100, 20);
-            txtMonto.Location = new Point(150, 40);
+            txtMonto.Size = new Size(200, 20);
+            txtMonto.Location = new Point(230, 40);
 
             // Botón Calcular
             btnCalcular = new Button();
             btnCalcular.Text = "Calcular";
             btnCalcular.AutoSize = true;
-            btnCalcular.Location = new Point(150, 70);
+            btnCalcular.Location = new Point(230, 70);
             btnCalcular.Click += new EventHandler(btnCalcular_Click);
             this.Controls.Add(btnCalcular);
 
