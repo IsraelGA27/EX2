@@ -132,13 +132,42 @@ namespace EX2
             txtMonto5.Location = new Point(150, 240);
             txtMonto5.Visible = false;
 
-
+            // Agregando controladores para la ventana
+            this.Controls.Add(lblFigura);
+            this.Controls.Add(cmbFiguras);
+            this.Controls.Add(lblCalculo);
+            this.Controls.Add(btnCalcular);
+            this.Controls.Add(txtMonto);
+            this.Controls.Add(lblConverciones);
+            this.Controls.Add(lblMX);
+            this.Controls.Add(lblCAD);
+            this.Controls.Add(lblEUR);
+            this.Controls.Add(lblUSD);
+            this.Controls.Add(lblJPY);
+            this.Controls.Add(txtMonto1);
+            this.Controls.Add(txtMonto2);
+            this.Controls.Add(txtMonto3);
+            this.Controls.Add(txtMonto4);
+            this.Controls.Add(txtMonto5);
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        private void btnCalcular_Click(Object? sender, EventArgs e)
+        {
+            Form2 frmVentana = new Form2();
+            if (frmVentana.ShowDialog() == DialogResult.OK)
+            {
+                Label lblAgregado = new Label();
+                //lblAgregado.Text = frmVentana.Mensaje; // Obtener un valor de el otro formulario
+                lblAgregado.AutoSize = true;
+                lblAgregado.Location = new Point(10, 30);
+                this.Controls.Add(lblAgregado);
+            }
         }
     }
 }
