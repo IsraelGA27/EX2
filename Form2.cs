@@ -12,6 +12,11 @@ namespace EX2
 {
     public partial class Form2 : Form
     {
+        public CheckBox? chbxMX;
+        public CheckBox? chbxUSD;
+        public CheckBox? chbxCAD;
+        public CheckBox? chbxEUR;
+        public CheckBox? chbxJPY;
         public Form2()
         {
             InitializeComponent();
