@@ -105,16 +105,22 @@ namespace EX2
             chbxJPY.Visible = true;
         }
 
-        private void Form2_Load(object sender, EventArgs e) // la dejaremos de lado para crear otra mejor 
+        private void btnAceptar_Click(Object? sender, EventArgs e)
         {
 
         }
-
         private void btnCancelar_Click(Object? sender, EventArgs e)
         {
             this.DialogResult = DialogResult.Cancel;
             //this.Close();
         }
+
+        private void Form2_Load(object sender, EventArgs e) // la dejaremos de lado para crear otra mejor 
+        {
+
+        }
+
+        
 
     }
 }
