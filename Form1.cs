@@ -2,6 +2,7 @@ namespace EX2
 {
     public partial class Form1 : Form
     {
+        // Agregando cositas necesarias (fue antes de crear el repositorio)
         public Label? lblFigura;
         public ComboBox? cmbFiguras;
         public Label? lblCalculo;
