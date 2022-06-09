@@ -40,6 +40,29 @@ namespace EX2
         {
             this.Size = new Size(400, 450);
             this.Text = "Nueva Ventana";
+
+            btnAceptar.Text = "Aceptar";
+            btnAceptar.AutoSize = true;
+            btnAceptar.Location = new Point(290, 350);
+
+            // Anidando Evento -- Cerrar 
+            btnAceptar.Click += new EventHandler(Form2_Load);
+            this.Controls.Add(btnAceptar);
+
+            btnCancel.Text = "Cancelar";
+            btnCancel.AutoSize = true;
+            btnCancel.Location = new Point(20, 350);
+
+            // Anidando Evento -- Cerrar 
+            btnCancel.Click += new EventHandler(btnCancelar_Click);
+            this.Controls.Add(btnCancel);
+
+            //Moneda
+            txtMoneda = new TextBox();
+            txtMoneda.Location = new Point(15, 135);
+            this.Controls.Add(txtMoneda);
+
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
